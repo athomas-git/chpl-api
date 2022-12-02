@@ -331,13 +331,13 @@ public class CertificationIdController {
         if (validator.isValid()) {
             CertificationIdDTO idDto = null;
             try {
-                idDto = certificationIdManager.getByProductIds(productIdList, year);
+                idDto = certificationIdManager.getByListings(productDtos, year);
                 if (null != idDto) {
                     results.setEhrCertificationId(idDto.getCertificationId());
                 } else {
                     if ((create) && (results.isValid())) {
                         // Generate a new ID
-                        idDto = certificationIdManager.create(productIdList, year);
+                        idDto = certificationIdManager.create(productDtos, year);
                         results.setEhrCertificationId(idDto.getCertificationId());
                     }
                 }
