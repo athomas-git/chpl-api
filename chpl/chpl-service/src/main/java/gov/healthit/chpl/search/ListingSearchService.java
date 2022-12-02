@@ -515,10 +515,10 @@ public class ListingSearchService {
             case CLOSED_SURVEILLANCE_NC_COUNT:
                 listings.sort(new ClosedSurveillanceNonConformityComparator(descending));
                 break;
-            case OPEN_DIRECTREVIEW_NC_COUNT:
+            case OPEN_DIRECT_REVIEW_NC_COUNT:
                 listings.sort(new OpenDirectReviewNonConformityComparator(descending));
                 break;
-            case CLOSED_DIRECTREVIEW_NC_COUNT:
+            case CLOSED_DIRECT_REVIEW_NC_COUNT:
                 listings.sort(new ClosedDirectReviewNonConformityComparator(descending));
                 break;
             default:

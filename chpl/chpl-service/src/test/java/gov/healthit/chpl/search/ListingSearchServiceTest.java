@@ -670,7 +670,7 @@ public class ListingSearchServiceTest {
         Mockito.when(listingSearchManager.getAllListings()).thenReturn(allListings);
         SearchRequest searchRequest = SearchRequest.builder()
             .sortDescending(false)
-            .orderBy(OrderByOption.OPEN_DIRECTREVIEW_NC_COUNT)
+            .orderBy(OrderByOption.OPEN_DIRECT_REVIEW_NC_COUNT)
             .pageNumber(0)
             .pageSize(10)
         .build();
@@ -697,7 +697,7 @@ public class ListingSearchServiceTest {
         Mockito.when(listingSearchManager.getAllListings()).thenReturn(allListings);
         SearchRequest searchRequest = SearchRequest.builder()
             .sortDescending(true)
-            .orderBy(OrderByOption.OPEN_DIRECTREVIEW_NC_COUNT)
+            .orderBy(OrderByOption.OPEN_DIRECT_REVIEW_NC_COUNT)
             .pageNumber(0)
             .pageSize(10)
         .build();
@@ -724,7 +724,7 @@ public class ListingSearchServiceTest {
         Mockito.when(listingSearchManager.getAllListings()).thenReturn(allListings);
         SearchRequest searchRequest = SearchRequest.builder()
             .sortDescending(false)
-            .orderBy(OrderByOption.CLOSED_DIRECTREVIEW_NC_COUNT)
+            .orderBy(OrderByOption.CLOSED_DIRECT_REVIEW_NC_COUNT)
             .pageNumber(0)
             .pageSize(10)
         .build();
@@ -751,7 +751,7 @@ public class ListingSearchServiceTest {
         Mockito.when(listingSearchManager.getAllListings()).thenReturn(allListings);
         SearchRequest searchRequest = SearchRequest.builder()
             .sortDescending(true)
-            .orderBy(OrderByOption.CLOSED_DIRECTREVIEW_NC_COUNT)
+            .orderBy(OrderByOption.CLOSED_DIRECT_REVIEW_NC_COUNT)
             .pageNumber(0)
             .pageSize(10)
         .build();
