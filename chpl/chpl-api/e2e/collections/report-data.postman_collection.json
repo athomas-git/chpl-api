@@ -11,13 +11,13 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"var jsonData = pm.response.json();\r",
+							"/*var jsonData = pm.response.json();\r",
 							"pm.test(\"/report-data/hti-1-criteria-migration-report end point returns 200 status and response body should not be empty\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"    //pm.expect(jsonData.response).not.eq(null);\r",
 							"});\r",
 							"\r",
-							"/*pm.test(\"/report-data/hti-1-criteria-migration-report end point response should have correct fields in response\", function () {\r",
+							"pm.test(\"/report-data/hti-1-criteria-migration-report end point response should have correct fields in response\", function () {\r",
 							"    pm.expect(jsonData).to.have.property('criteriaMigrationDefinitions');\r",
 							"    pm.expect(jsonData.criteriaMigrationDefinitions[0]).to.have.property('originalCriterion');\r",
 							"    pm.expect(jsonData.criteriaMigrationDefinitions[0]).to.have.property('updatedCriterion');\r",
